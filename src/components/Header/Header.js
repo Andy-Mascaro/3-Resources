@@ -7,17 +7,17 @@ export default function Header() {
     <div className='header'>
       <ul>
         <NavLink exact to={'/main'}>
-          <li>Home</li>
+          <p>Home</p>
         </NavLink>
         <NavLink exact to={'/directors'}>
-          <li>Directors</li>
+          <p>Directors</p>
         </NavLink>
-        {/* <NavLink exact to={'/books'}>
-          <li>Books</li>
+        <NavLink exact to={'/movies'}>
+          <p>Star Wars Movies</p>
         </NavLink>
-        <NavLink exact to={'/characters'}>
-          <li>Characters</li>
-        </NavLink> */}
+        <NavLink exact to={'/viewers'}>
+          <p>Movie Reviewers</p>
+        </NavLink>
       </ul>
     </div>
   );

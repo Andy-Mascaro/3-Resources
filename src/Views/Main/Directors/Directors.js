@@ -11,7 +11,6 @@ export default function Directors() {
     const fetch = async () => {
       try {
         const resp = await fetchDirectors(name);
-        console.log(resp);
         setDirectors(resp);
       } catch (e) {
         alert(e.message);

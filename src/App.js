@@ -3,6 +3,9 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Directors from './Views/Main/Directors/Directors';
 import Header from './components/Header/Header';
+import Movies from './Views/Movies/Movies';
+import Viewers from './Views/Viewers/Viewers';
+
 
 function App() {
   return (
@@ -12,8 +15,14 @@ function App() {
           <Header />
           <Main />
         </Switch>
-        <Route exact path="/Directors">
+        <Route exact path="/directors">
           <Directors />
+        </Route>
+        <Route exact path="/movies">
+          <Movies />
+        </Route>
+        <Route exact path="/viewers">
+          <Viewers />
         </Route>
       </div>
     </BrowserRouter>
