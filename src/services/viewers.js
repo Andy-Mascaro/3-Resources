@@ -6,6 +6,6 @@ export async function fetchViewers() {
     },
   });
   const data = await resp.json();
-  console.log('fetchdata', data);
+
   return data;
 }
